@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .box-parent {
+        border: 2px solid red;
+        background-color: aqua;
+        height: 400px;
+        width: 200px;
+        position: relative;
+        left: 20px;
+        top: 60px;
+        right: 30px;
+        bottom: 20px;
+      }
+      .box-childden {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        background-color: aquamarine;
+        top: 0;
+        right: 0;
+      }
+      .box-fixed {
+        position: fixed;
+        background-color: rgba(red, green, blue, alpha);
+        right: 0;
+        top: 0;
+      }
+
+      .header {
+        width: 100%;
+        height: 50px;
+        background-color: orange;
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-parent">
+      box-parent
+      <div class="box-childden">box-childden</div>
+    </div>
+
+    <!--  -->
+    <div>
+      <div class="box-fixed">Box Fixed</div>
+    </div>
+    <!-- stiky -->
+    <header class="header">header</header>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam pariatur
+      molestias earum quis harum, omnis eum architecto sequi ex autem non sit
+      rerum est reiciendis ea in blanditiis qui excepturi!
+    </p>
+  </body>
+</html>

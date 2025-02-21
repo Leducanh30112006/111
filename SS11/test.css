@@ -1,0 +1,83 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+.container {
+
+}
+.header {
+    height: 50px;
+    padding: 0 48px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: red;
+}
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+.links-nav {
+}
+.links-item {
+    padding: 8 12px;
+
+}
+.layout {
+    padding: 12 48px;
+}
+.main-content {
+    display: flex;
+    height: 50px;
+    gap: 12px;
+}
+.list-post{
+    display: flex;
+    gap: 12px;
+    padding: 12PX;
+    flex-wrap: nowrap;
+}
+.post-item {
+    list-style: none;
+    flex: 1;
+}
+.layer {
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 48px;
+    
+}
+.footer-left {
+}
+.footer-right {
+}
+/* Mobile: width < 768px */
+/* max-width: Tức là bé hơn 767px */
+/* min-width: Tức là lớn hơn 768px */
+@media screen and (max-width: 767px) {
+    .menubar {
+      display: block;
+    }
+    .main-content {
+flex-direction: column;    
+}
+  }
+  
+  /* Tablet: width >= 768px and width < 1024px */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .post-item {
+       flex-basis: calc(50% - 12px);    }
+  }
+  
+  /* PC: width >= 1024px */
+  @media screen and (min-width: 1024px) {
+    .pc {
+      display: block;
+    }
+  }

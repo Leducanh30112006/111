@@ -1,0 +1,12 @@
+/*Css External*/
+#heading-3{
+    color: brown;
+}
+*{/* * Tat ca cac file deu bi anh huowng */
+    font-family: 'Times New Roman', Times, serif;/*Kieu chu*/
+}
+h3{
+    font-family: 'Courier New', Courier, monospace
+     ;
+     color: aquamarine;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .flex-container {
+        height: 100vh;
+
+        display: flex; /* Dinh nghia viec su dung mo hinh flex box. neu khong dung thi se khong dung duoc cac thuoc tinh flex box*/
+
+        flex-direction: row; /*thay doi huong hien thi cua flex item*/
+
+        justify-content: center; /* Canh giua theo chieu ngang*/
+
+        align-items: center; /* Canh giua theo chieu doc*/
+
+        flex-wrap: wrap; /* Cho phep chuyen dong cua flex item xuong dong khi khong du cho*/
+
+        gap: 10px; /* Khoang cach giua cac flex item*/
+      }
+      .flex-item {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        border: 1px solid black;
+      }
+      .item-1 {
+        order: 1;
+        flex: 1;
+      }
+      .item-2 {
+        order: 2;
+        flex: 2;
+      }
+      .item-3 {
+        flex: 1;
+        order: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item item-1">Quuang cao</div>
+      <div class="flex-item item-2">ND</div>
+      <div class="flex-item item-3">Bai viet noi bat</div>
+    </div>
+  </body>
+</html>
